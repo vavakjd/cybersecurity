@@ -84,7 +84,7 @@ The ELK-VM(137.117.38.25) can only be accessed from the Jumpbox Provisioner(138.
 A summary of the access policies in place can be found in the table below.
 
 | Name                               | Publicly Accessible         | Allowed IP Addresses |
---------------------------------------------------------------------------------------------
+| ---------------------------------: | :-------------------------: | :------------------: |
 | JumpboxProvisioner-WESTus          | No                          |  172.87.70.14        |
 | DVWA-WEB-1                         | No                          |  172.87.70.14        |
 | DVWA-WEB-2                         | No                          |  172.87.70.14        |
