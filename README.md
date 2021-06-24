@@ -64,7 +64,7 @@ The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name                           | Function       | IP Address         | Operating System          |
---------------------------------------------------------------------------------------------------------
+| ------------------------------ | :------------: | :----------------: | :-----------------------: |
 | JumpboxProvisioner-WESTus      | Gateway        |  10.0.0.4          | Linux                     |
 | DVWA-WEB-1                     | Server         |  10.0.0.5          | Linux                     |
 | DVWA-WEB-2                     | Server         |  10.0.0.6          | Linux                     |
