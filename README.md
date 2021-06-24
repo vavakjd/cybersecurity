@@ -53,23 +53,23 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.
-The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. It does this by shifting attack traffic from the corporate server to a public cloud provider. A jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
+-Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.  The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. It does this by shifting attack traffic from the corporate server to a public cloud provider. 
+-A jump box is a system on a network used to access and manage devices in a separate security zone. A jump server is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Jumpbox and system network.
 - Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 - Metricbeat collects metrics and statistics from services running on the server then ships them to the output you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name                                          | Function      | IP Address        | Operating System |
--------------------------------------------------------------------------------------------------------------------------------------------
-| JumpboxProvisioner-WESTus      | Gateway      |  10.0.0.4          | Linux                     |
-| DVWA-WEB-1                              | Server         |  10.0.0.5          | Linux                     |
-| DVWA-WEB-2                              | Server         |  10.0.0.6          | Linux                     |
-| DVWA-WEB-3                              | Server         |  10.0.0.7          | Linux                     |
-| ELKserver                                   | Server         |  10.1.0.4          | Linux                     |
+| Name                           | Function       | IP Address         | Operating System          |
+--------------------------------------------------------------------------------------------------------
+| JumpboxProvisioner-WESTus      | Gateway        |  10.0.0.4          | Linux                     |
+| DVWA-WEB-1                     | Server         |  10.0.0.5          | Linux                     |
+| DVWA-WEB-2                     | Server         |  10.0.0.6          | Linux                     |
+| DVWA-WEB-3                     | Server         |  10.0.0.7          | Linux                     |
+| ELKserver                      | Server         |  10.1.0.4          | Linux                     |
 
 ### Access Policies
 
@@ -83,13 +83,13 @@ The ELK-VM(137.117.38.25) can only be accessed from the Jumpbox Provisioner(138.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name                                     | Publicly Accessible | Allowed IP Addresses |
----------------------------------------------------------------------------------------------------------------------------
-| JumpboxProvisioner-WESTus | No                          |  172.87.70.14        |
+| Name                               | Publicly Accessible         | Allowed IP Addresses |
+--------------------------------------------------------------------------------------------
+| JumpboxProvisioner-WESTus          | No                          |  172.87.70.14        |
 | DVWA-WEB-1                         | No                          |  172.87.70.14        |
 | DVWA-WEB-2                         | No                          |  172.87.70.14        |
 | DVWA-WEB-3                         | No                          |  172.87.70.14        |
-| ELKserver                              | No                          |  172.87.70.14        |
+| ELKserver                          | No                          |  172.87.70.14        |
 
 ### Elk Configuration
 
