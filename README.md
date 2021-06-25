@@ -8,6 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 Here is the current /etc/ansible/filebeat-playbook.yml running on the service.
 
+`
 ---
 - name: installing and launching filebeat
   hosts: webservers
@@ -38,7 +39,7 @@ Here is the current /etc/ansible/filebeat-playbook.yml running on the service.
     systemd:
       name: filebeat
       enabled: yes
-
+`
 
 This document contains the following details:
 - Description of the Topologu
